@@ -1,0 +1,39 @@
+/*1 - O que são variáveis opcionais e para que servem?*/
+
+print("São variáveis que podem ou não serem informadas,")
+
+/*2 - Declare um array com 2 inteiros, um set com 3 doubles, e um dicionário com 4 elementos com chave e valor do tipo String.*/
+var array1 = [1,2]
+print(array1)
+var valueSet: Set<Double> = [1.1,2.1,3.1]
+print(valueSet)
+var dictionary = ["teclado": "periferico","mouse":"periferico","mousePad":"auxiliar periferico","headset":"periferico"]
+print(dictionary)
+
+
+
+/*3 - Descreva a diferença entre Arrays e Sets.*/
+
+print("No Array é armazenado uma matriz de valores do mesmo tipo, e no”Set” armazena valores distintos do mesmo tipo.")
+
+/*4 - Dada a seguinte sequência: [1, 13, 13, 26, 38, 38, 39, 41, 50, 50, 74, 74, 80, 90, 100], crie um array a partir destes elementos, removendo os elementos repetidos.
+*/
+var array =  [1, 13, 13, 26, 38, 38, 39, 41, 50, 50, 74, 74, 80, 90, 100]
+//já que é um array, e como a ordem não muda, eu posso remover um por um 
+
+array.remove(at:1)
+array.remove(at:4)
+array.remove(at:8)
+array.remove(at:10)
+
+var arraySet = Set(array)
+
+print(arraySet)
+
+/*5 - Utilize a sequência acima e calcule a soma de todos os elementos.*/
+var count = 0
+for int in array {
+print("element: \(int)")
+count += int
+}
+print(count)
