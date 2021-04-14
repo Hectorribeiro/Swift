@@ -1,0 +1,198 @@
+
+let randomNum = Int.random(in:0...100)
+
+print("Question 1")
+print ("----------------------------")
+
+var n = 0
+
+while n < 100{
+
+let randNum = Int.random(in:0...10)
+
+print("Number: \(n)")
+print ("----------------------------")
+
+   if(n < 100){
+print(n)
+  n+=randNum
+
+  }
+}
+
+print("Question 2")
+print ("----------------------------")
+
+//usei switch por que não consegui fazer usando while
+
+
+var Password = "novas"
+
+
+switch Password {
+
+case "novasenha": print("Correct password, you are in.");
+
+case "sair" : print("You wrote sair, you are out.");
+
+  default:print("Incorrect password, you wrote '"+Password+"'.");
+}
+print("-----------------------------")
+print("Question 3")
+
+func mp(_ numbers:[Int]) -> Int
+{
+  
+    var mp = 0
+
+    for n in numbers {
+      
+        mp = ( n*2 + n*4 + n*3 ) / 10
+        
+    }
+
+    return mp
+}
+
+for h in 1...10 {
+
+  let result = mp([Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100)])
+  
+  print(result)
+}
+
+
+
+print("Question 4")
+print ("----------------------------")
+
+
+var values = [0]
+var i = 0
+
+while i < 50 {
+
+i+=1;
+  values.append(i)
+}
+print(values)
+
+
+/*func findValues(value: [Int]) -> (min:Int, max:Int ){
+var minvalue = value[0]
+var maxvalue = value[0]
+
+
+for x in value [1..<values.count]{
+
+if x < min {
+  minvalue = x
+}
+else if x > max {
+  maxvalue = x
+}
+} 
+return (minvalue,maxvalue) 
+}
+let results = findValues([1,34,56,100])
+print(results)*/
+
+
+
+print ("----------------------------")
+
+print("Question 5")
+
+var cont = 0
+var multi = 0
+
+var num = Int.random(in: 1..<100)
+var arrayNum = [0,1,2,3,4,5,6,7,8,9]
+
+for cont in arrayNum {
+
+let cont = cont + 1 
+multi = num * cont
+
+print("multiplication: \(cont) * \(num) = \(multi)")
+}
+print("-----------------------------")
+
+var cont1 = 0
+var multi1 = 0
+
+var num1 = Int.random(in: 1..<100)
+var arrayNum1 = [0,1,2,3,4,5,6,7,8,9]
+
+for cont1 in arrayNum1 {
+
+let cont1 = cont1 + 1 
+multi1 = num1 * cont1
+
+print("multiplication: \(cont1) * \(num1) = \(multi1)")
+}
+print("-----------------------------")
+var cont2 = 0
+var multi2 = 0
+
+var num2 = Int.random(in: 1..<100)
+var arrayNum2 = [0,1,2,3,4,5,6,7,8,9]
+
+for cont2 in arrayNum2 {
+
+let cont2 = cont2 + 1 
+multi2 = num2 * cont2
+
+print("multiplication: \(cont2) * \(num2) = \(multi2)")
+}
+print("-----------------------------")
+var cont3 = 0
+var multi3 = 0
+
+var num3 = Int.random(in: 1..<100)
+var arrayNum3 = [0,1,2,3,4,5,6,7,8,9]
+
+for cont3 in arrayNum3 {
+
+let cont3 = cont3 + 1 
+multi3 = num3 * cont3
+
+print("multiplication: \(cont3) * \(num3) = \(multi3)")
+}
+print("-----------------------------")
+var cont4 = 0
+var multi4 = 0
+
+var num4 = Int.random(in: 1..<100)
+var arrayNum4 = [0,1,2,3,4,5,6,7,8,9]
+
+for cont4 in arrayNum4 {
+
+let cont4 = cont4 + 1 
+multi4 = num4 * cont4
+
+print("multiplication: \(cont4) * \(num4) = \(multi4)")
+}
+print("-----------------------------")
+print("Question 6")
+
+for cousin in 92...1478{
+  
+  
+
+  if(cousin % 2 == 0){
+
+  }else{
+let cousin = cousin + cousin
+
+  }
+  print(cousin)
+}
+print("-----------------------------")
+print("Question 7")
+
+var sortArray = 
+[Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100),Int.random(in: 1..<100)]
+
+sortArray.sort(by: <)
+print(sortArray)
