@@ -1,0 +1,58 @@
+// question 1
+func intValue(num:Int) -> Int{ 
+    var divisor = 1 
+  while divisor <= 10 {
+   let division = num / divisor
+    print("Division = \(num) / \(divisor) = \(division)")
+  
+   divisor += 1
+  }
+    return num
+  }
+
+print("---------------------------")
+
+//question 2
+func returnBool(num:Int) -> Bool{
+  var max = Int.min
+  var min = Int.max
+
+if num > max{
+  max = num
+  return true
+}else if num < min {
+  min = num
+  return false
+}
+return num
+}
+print("---------------------------")
+//question 3
+func finalMedia(nota:Double) {
+
+let media = 0.0 ... 10.0
+
+switch media {
+  case 0.0 ... 4.9 : print("Your grade is 'D'") 
+
+  case 5.0 ... 6.9 : print("Your grade is 'C'") 
+
+  case 7.0 ... 8.9 : print("Your grade is 'B'") 
+
+  case 9.0 ... 10.0 : print("Your grade is 'A'")
+
+  default: print("You are not a classmate ")
+}
+return nota
+}
+//print(finalMedia(media:3.9))
+print("---------------------------")
+//question 4
+
+func arraySum(_array:[Int])-> Int{
+ let total = _array.reduce(0, +)
+}
+print(arraySum(_array:[2, 3, 26, 37, 38, 48, 60, 62, 75, 78]))
+
+print("---------------------------")
+//question 5
